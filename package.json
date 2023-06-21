@@ -7,6 +7,23 @@
     "start": "node index.js",
     "test": "jest --coverage"
   },
+  "jest": {
+    "collectCoverageFrom": [
+    "**/*.js",
+    "!**/app.js",
+    "!**/node_modules/**",
+    "!**/coverage/**",
+    "!**/jest.config.js**"
+    ],
+    "coverageThreshold": {
+    "global": {
+    "branches": 80,
+    "functions": 80,
+    "lines": 80,
+    "statements": 80
+      }
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
